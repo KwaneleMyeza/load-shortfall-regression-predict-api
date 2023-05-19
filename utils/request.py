@@ -57,3 +57,10 @@ else:
     print(f"API prediction result: {prediction_result[0]}")
 print(f"The response took: {api_response.elapsed.total_seconds()} seconds")
 print("*" * 50)
+
+# Display the prediction result
+print("Received POST response:")
+print("*"*50)
+print(f"API prediction result: {api_response.json()}")
+print(f"The response took: {api_response.elapsed.total_seconds()} seconds")
+print("*"*50)
